@@ -29,7 +29,7 @@ client.on('messageCreate', async function(message){
             Bubble:`,
             temperature:0.9,
             max_tokens:100,
-            stop:["Bubble:", "Singh Shiv:"],
+            stop:["Bubble:", "Singh Shiv: "],
         })
 
         message.reply(`${gptResponse.data.choices[0].text}`);
